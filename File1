@@ -1,0 +1,28 @@
+# This code is to calculate the percentage tip for buying in a restaurant whether or not you are in a group or buying individually. 👇
+# Percentage tip calculation
+print("Welcome to the tip calculator.")
+# The total bill
+total_bill =input("what is your total bill:")
+print(total_bill) 
+# Number of people
+split_bill =input("How many people to split the bill:")
+print(split_bill)
+# choose the tip you want to give in percentage 
+percentage_tip_input =input('what percentage tip would you like to give:' " "  "10, 12 or 15?")
+print(percentage_tip_input)
+percent = int(percentage_tip_input) * float(0.01)
+ 
+# The tip plus the actual cost
+percentage = int(total_bill) * float(percent)
+print(percentage)
+# Total amount to be paid 
+result = int(total_bill) + int(percentage) 
+print(result)
+# what each person is paying 
+print("Each person should pay:\n")
+each_one_pays = int(result) / int(split_bill)
+print(each_one_pays)
+# Print the outcome as a whole number 
+each_one_pays_whole = round(each_one_pays)
+print(each_one_pays_whole)
+
